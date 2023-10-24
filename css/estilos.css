@@ -4,7 +4,7 @@ body {
     /* padding-top: 50px; */
 }
 .card {
-    margin-bottom: 20px;
+    margin: 10px;
 }
 
 .card-img-top {
@@ -34,4 +34,7 @@ body {
 
 .fonte-branca {
     color: white;
+}
+.fundo {
+    background-color: #242020;
 }
