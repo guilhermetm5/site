@@ -12,6 +12,7 @@ body {
     object-fit: cover;
 }
 .footer {
+    text-align: center;
     background-color: #14181b;
     color: #ffffff;
     padding: 15px 0;
