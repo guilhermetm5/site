@@ -14,9 +14,24 @@ body {
 .footer {
     text-align: center;
     background-color: #14181b;
-    color: #ffffff;
+    color: #292929;
     padding: 15px 0;
     /* position: absolute; */
     bottom: 0;
     width: 100%;
+}
+.img-final {
+    width: 100%;
+}
+
+.butao a {
+    text-decoration: none;
+    color: white;
+}
+.butao{
+    width: 100%;
+}
+
+.fonte-branca {
+    color: white;
 }
