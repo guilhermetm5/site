@@ -10,9 +10,10 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/estilos.css">
+        <link rel="shortcut icon" href="img/sailboat_23937.ico" type="image/x-icon">
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-dark navbar-expand-lg ">
+    <nav class="navbar navbar-dark color3 navbar-expand-lg ">
         <a class="navbar-brand" href="#">Tupi Viagens</a>
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarteste"
             aria-controls="navbarteste" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,28 +37,71 @@
         </div>
     </nav>
 
-    <div class="container mt-5">
+    <div class="container mt-5 color3 borda-legal fonte-branca">
         <div class="form-container">
             <h2>Entre em contato</h2>
-            <form>
-                <div class="mb-3">
+            <form class="row">
+                <div class="col-md-3">
                     <label for="nome" class="form-label">Nome</label>
-                    <input type="text" class="form-control" name="nome" id="nome" required>
+                    <input type="text" class="form-control" name="nome" id="nome" placeholder="Jose" required>
                 </div>
-                <div class="mb-3">
+                <div class="col-md-3">
+                    <label for="sobrenome" class="form-label">Sobrenome</label>
+                    <input type="text" class="form-control" name="sobrenome" id="sobrenome" placeholder="Augusto" required>
+                </div>
+                <div class="col-md-3">
+                    <label for="idade" class="form-label">Idade</label>
+                    <input type="number" min="1" max="100" class="form-control" name="idade" id="idade" placeholder="1-100 anos" required>
+                </div>
+                <div class="col-md-3">
+                    <label for="datanasc" class="form-label">Data de nascimento</label>
+                    <input type="date" class="form-control" name="datanasc" id="datanasc" required>
+                </div>
+                <div class="col-md-6">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" name="email" id="email" required>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="exemplo@email.com" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="telefone" class="form-label">Telefone</label>
+                    <input type="tel" class="form-control" name="telefone" id="telefone" placeholder="ddd + seu número" required>
                 </div>
                 <div class="mb-3">
                     <label for="Mensagem" class="form-label">Mensagem</label>
-                    <textarea class="form-control" name="mensagem" id="mensagem" rows="4" required>Mensagem</textarea>
+                    <textarea class="form-control" name="mensagem" id="mensagem" rows="4" placeholder="Nos conte qual viagem te encantou mais e qual quer presenciar ao vivo!" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-dark">Enviar Mensagem</button>
+                <div class="col-md-3">
+                    <label for="escolhaum">Escolha uma opcão: </label>
+                    <select name="opcao" id="escolhaopcao">
+                        <option value="opcao1">Pacote 1</option>
+                        <option value="opcao2">Pacote 2</option>
+                        <option value="opcao3">Pacote 3</option>
+                    </select>
+                    </div>
+                <div class="col-md-3">
+                    <label for="escolhaum">Cidade de embarque: </label>
+                    <select name="opcao" id="escolhaopcao">
+                        <option value="opcao1">Manaus</option>
+                        <option value="opcao2">Irandura</option>
+                        <option value="opcao3">Itacoatiara</option>
+                    </select>
+                    </div>
+                <div class="col-md-6">
+                    <label for="escolhaum">Cidade destino: </label>
+                    <select name="opcao" id="escolhaopcao">
+                        <option value="opcao1">Itacoatiara</option>
+                        <option value="opcao2">Iranduba</option>
+                        <option value="opcao3">Manaus</option>
+                        <option value="opcao1">Maues</option>
+                        <option value="opcao2">parintins</option>
+                        <option value="opcao3">Presidente Figueiredo</option>
+                    </select>
+                    </div>
+                <button type="submit" class="btn color2 fonte-branca cima menor" >Enviar Mensagem</button>
 
             </form>
         </div>
     </div>
-    <footer class="footer fonte-branca">
+    <footer class="footer color3 fonte-branca">
         <p>&copy; 2023 Tupi Viagens Amazônia. Todos os direitos reservados.</p>
     </footer>
 </body>
